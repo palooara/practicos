@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+header img{
+    width: 200px;
+}
+h1{
+    font-size: 35px;
+    text-align: center;
+    color: rgb(187, 83, 151);
+    letter-spacing: 20px;
+    font-weight:lighter ;
+}
+div{
+    display:inline-flex;
+}
+div.pop-century img{
+    text-align: right;
+    width: 400px;
+    height: 5%;
+    height: 5%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-left: 10px;
+}
+h2{
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 10px;
+    color: rgb(187, 83, 151);
+    font-weight: lighter;
+}
+article div p{
+    color: rgb(92, 125, 181);
+    font-size: 15px;
+
+}

@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(39, 50, 56);
+
+}
+p{
+    color: white;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    padding-right: 1%;
+    word-spacing: 6px;
+}
+h1{
+    background-color: white; 
+    font-family: Impact, Charcoal, sans-serif; 
+    color: rgb(105, 133, 147); 
+    text-align: center;
+    font-weight: 900;
+    font-size: 60px;
+    margin-right: 0%;
+}
+h2{
+    font-family: Arial, Gadget, sans-serif;
+    font-style:unset;
+}
+img{
+    width: 500px;
+    height: 146px;
+    border-style: ridge;
+    border-width: 4px;
+}
