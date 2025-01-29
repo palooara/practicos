@@ -1,0 +1,41 @@
+img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1px;
+}
+nav{
+    margin-top: 1px;
+}
+header a{
+    color: rgb(239, 109, 36);
+    font-size: 2em;
+}
+
+main{
+    color: rgb(119, 85, 72);
+    font-family: Verdana, Arial, sans-serif;
+}
+
+h2{
+    background-color: rgb(119, 85, 72);
+    color: white;
+}
+
+h1{
+    color: rgb(119, 85, 72);
+}
+h2{
+    color: rgb(225, 212, 207);
+}
+#item1 a{
+    color: rgb(239, 109, 36);
+}
+#item2{
+    color: rgb(59, 174, 200);
+}
+#item3{
+    color: rgb(239, 75, 81);
+}
+#item4{
+    color: rgb(216, 176, 61);
+}
