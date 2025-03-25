@@ -1,0 +1,214 @@
+/* #8B322C bordo, #DD5746 salmon, #EACEA7 crema, #BFA784 beige, #37342D gris_oscuro */
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Bangers&family=Barrio&family=Bowlby+One+SC&family=Bungee+Hairline&family=Bungee+Outline&family=Bungee+Shade&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Emblema+One&family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap');
+
+body{
+    font-family: "Cormorant Garamond", serif;
+    background-color: #fff9f7;
+    border: #f8aa37 10px dotted;
+    box-sizing: border-box;
+}
+#formularioAfiliacion{
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+}
+h1{
+    font-family: "Emblema One", system-ui;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    font-size: 4em;
+    color: #ec7760;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+#musculo{
+    display: none;
+}
+h1 img{
+    width: 70px;
+    height: 70px;
+}
+form{
+    display: grid;
+    grid-template-areas: "datosPersonales datosContacto" "actividades condiciones" "botones botones";
+    grid-template-columns: 48% 48%;
+    grid-gap: 30px;
+}
+#datosPersonales, #datosContacto, #actividades{
+    background-image: url("../images/descarga.jpg") ;
+    background-repeat: repeat;
+    background-size: contain;
+}
+#datosPersonales{
+    padding: 15px;
+    border-radius: 10px;
+    grid-area: datosPersonales;
+}
+#datosContacto{
+    padding: 15px;
+    border-radius: 10px;
+    grid-area: datosContacto;
+}
+#datosContacto fieldset{
+    height:90% ;
+    grid-area: datosContacto;
+}
+#actividades{
+    padding: 15px;
+    border-radius: 10px;
+    grid-area: actividades;
+}
+#condiciones{
+    padding: 10px;
+    grid-area: condiciones;
+    padding-top: 60px;
+    background-image: url("../images/teleretro.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+#campo p{
+    margin-left: 33%;
+}
+#botones{
+    padding: 15px;
+    border-radius: 10px;
+    grid-area: botones;
+    margin-bottom: 20px;
+}
+#disco{
+    display: flex;
+    justify-content: center;
+    margin-top:150px ;
+    width: 100%;
+}
+
+#disco img{
+    width: 20%;
+    height: 80px;
+}
+label{
+    display: block;
+}
+hr{
+    border: none;
+}
+fieldset{
+    border: none;
+    background-color: #fff9f7;
+    border-radius: 10px;
+    border: #DD5746 3px dotted;
+}
+legend{
+    color: #f8aa37;
+    border: #DD5746 3px dotted;
+    padding: 3px;
+    background-color: #fff9f7;
+}
+#botones{
+    display: flex;
+    justify-content: center;
+}
+#condiciones .acepto{
+    display: flex;
+    margin-left: 30%;
+    margin-top: 2%;
+}
+
+
+
+
+
+
+
+
+@media(min-width: 1920px){
+    #condiciones .acepto{
+        display: flex;
+        margin-left: 38%;
+        margin-top: 1.5%;
+    }
+    #campo p{
+        margin-left: 40%;
+    }
+}
+
+@media (max-width: 992px){
+    #condiciones .acepto{
+        display: flex;
+        margin-left: 20%;
+        margin-top: 2%;
+    }
+    #campo p{
+        margin-left: 22%;
+    }
+    h1{
+        
+        width: 65%;
+    }
+    #disco{
+        display: flex;
+        justify-content: center;
+        margin-top:150px ;
+        width: 100%;
+    }
+    
+    #disco img{
+        width: 25%;
+        height: 80px;
+    }
+}
+
+@media(max-width:920px){
+    form{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+    h1{
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+    #condiciones .acepto{
+        display: flex;
+        margin-left: 32%;
+    }
+    #campo p{
+        margin-left: 35%;
+    }
+    
+    #condiciones {
+        padding: 80px;
+        padding-left: 0%;
+        margin-right:10% ;
+        margin-left: 15%;
+        margin-left: 1%;
+        margin-right: 5%;
+        width: 90%;
+    }
+}
+@media(max-width:430px){
+    #condiciones {
+        padding: 80px;
+        padding-right: 10%;
+        
+        width: 80%;
+    }
+    #condiciones .acepto{
+        display: flex;
+        margin-left: 0%;
+    }
+    #campo p{
+        margin-left: 2%;
+    }
+}
+
+.estiloPelis{
+    display: none;
+}
+

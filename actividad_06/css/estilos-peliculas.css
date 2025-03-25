@@ -1,0 +1,69 @@
+.estiloRetro{
+    display: none;
+}
+body{
+    text-align: center;
+    background-color: rgb(1, 4, 37);
+    color: white;
+}
+h1{
+    text-align: center;
+}
+hr{
+    display: none;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    border: 15px solid transparent;
+    border-left: none;
+    border-right:none;
+    padding: 15px;
+    padding-bottom: 20px;
+    width: 60%;
+    margin: 0 auto;
+    border-image-source: url("../images/bordes.png") ;
+    border-image-slice: 10%;
+    justify-content:space-evenly;
+}
+fieldset #datosContacto{
+    width: 70%;
+    align-items: center;
+}
+fieldset:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(211, 208, 208, 0.19);
+    text-align: center;
+}
+#condiciones{
+    width: 100%;
+}
+#condiciones .acepto{
+    display: flex;
+    justify-content: center;
+}
+#pororo{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    height: 10%;
+}
+#pororo img{
+    width: 25%;
+    height: 80px;
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: gray;
+    color: black;
+}
+
+.active {
+    background-color: blue;
+    color: white;
+}

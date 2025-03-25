@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, ini./css/estilos.csstial-scale=1.0">
+    <link id="temaCSS" rel="stylesheet" href="./css/estilos.css ">
+
+    <title>Afiliación</title>
+    <style>
+        #actividades fieldset{
+        text-align: left;
+        }
+        #actividades label{
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: medium;
+        }
+        .sedes div, .sedes{
+            display: flex;
+        }
+        .sexo div, .sexo{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vení al Gym! <b id="musculo">&#128170;&#127997;</b> <img class="estiloRetro" src="./images/girl power.png" alt=""></h1>
+
+    <div id="formularioAfiliacion">
+
+        <!-- FORMULARIO -->
+
+        <form id="formulario" action="codigo.php" method="post">
+
+            <!-- DATOS PERSONALES -->
+
+            <div id="datosPersonales" >
+                <fieldset>
+                    <legend> &#128587;&#127996; <strong>D</strong>atos <strong>P</strong>ersonales &#128064;</legend>
+                    <label for="nombre">Nombre*:</label>
+                    <input type="text" id="nombre" name="nombre" pattern="^([A-Za-zÑñÁáÉéÍíÓóÚú]+['\-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+)(\s+([A-Za-zÑñÁáÉéÍíÓóÚú]+['\-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+))*$" required autofocus> <br>
+
+                    <label for="apellido">Apellido*:</label> 
+                    <input type="text" id="apellido" name="apellido" pattern="^([A-Za-zÑñÁáÉéÍíÓóÚú]+['\-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+)(\s+([A-Za-zÑñÁáÉéÍíÓóÚú]+['\-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+))*$" required><br>
+
+                    <label for="documento">Documento*:</label> 
+                    <input type="number" name="documento" id="documento" pattern=""  size="8" required> <br>
+
+                    <label for="nacionalidad">Nacionalidad*:</label> 
+                    <select name="nacionalidad" id="nacionalidad" required>
+                        <option value="">-Seleccionar-</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="uruguaya">Uruguaya</option>
+                        <option value="paraguaya">Paraguaya</option>
+                        <option value="boliviana">Boliviana</option>
+                        <option value="chilena">Chilena</option>
+                        <option value="peruana">Peruana</option>
+                        <option value="brasilera">Brasilera</option>
+                        <option value="colombiana">Colombiana</option>
+                        <option value="venezolana">Venezolana</option>
+                        <option value="ecuatoriana">Ecuatoriana</option>
+                        <option value="panameña">Panameña</option>
+                        <option value="costarricense">Costarricense</option>
+                        <option value="nicaraguense">Nicaraguense</option>
+                        <option value="hondureña">Hondureña</option>
+                        <option value="salvadoreña">Salvadoreña</option>
+                        <option value="guatemalteca">Guatemalteca</option>
+                        <option value="mexicana">Mexicana</option>
+                        <option value="estadounidense">Estadounidense</option>
+                        <option value="canadiense">Canadiense</option>
+                        <option value="cubana">Cubana</option>
+                        <option value="dominicana">Dominicana</option>
+                        <option value="haitiana">Haitiana</option>
+                        <option value="jamaiquina">Jamaiquina</option>
+                        <option value="bahameña">Bahameña</option>
+                        <option value="trinitense">Trinitense</option>
+                        <option value="tobaguense">Tobaguense</option>
+                        <option value="granadina">Granadina</option>
+                        <option value="santalucense">Santalucense</option>
+                        <option value="vincentina">Vincentina</option>
+                        <option value="barbadense">Barbadense</option>
+                        <option value="antiguana">Antiguana</option>
+                        <option value="dominiquesa">Dominiquesa</option>
+                    </select> <br>
+
+                    <label for="contanos">Contanos un poco de vos...</label>
+                    <textarea name="contanos" id="contanos"></textarea> <br>
+
+                    <label for="sexo">Sexo*:</label> <br>
+                    <div class="sexo">
+                        <div><input type="radio" name="sexo" id="sexo" value="femenino" checked><p>Femenino</p></div>
+                        <div><input type="radio" name="sexo" id="sexo" value="masculino"><p>Masulino</p></div>
+                        <div><input type="radio" name="sexo" id="sexo" value="otro"><p>Otro</p></div>
+                    </div>
+                    <br> 
+                </fieldset>
+                <hr>
+            </div>
+            <!-- DATOS DE CONTACTO -->
+            
+            <div id="datosContacto">
+                <fieldset>
+                    <legend> &#128241; <strong>D</strong>atos de <strong>C</strong>ontacto &#128231;</legend>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="number" name="telefono" id="telefono" pattern="" size="10" minlength="10" maxlength="10" placeholder="Código de área y número"> <br>
+
+                    <label for="email">Dirección de correo electrónico*:</label>
+                    <input type="email" name="email" id="email" pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"  placeholder="Ej: mail@gmail.com"> <br>
+                    <div id="disco"><img class="estiloRetro" src="./images/disco.png" alt=""> <img class="estiloRetro" src="./images/disco.png" alt=""><img class="estiloRetro" src="./images/disco.png" alt=""></div>
+                    <div id="pororo"><img class="estiloPelis" src="./images/pororo.png" alt=""></div>
+                </fieldset>
+                <hr>
+            </div>
+            <!-- ACTIVIDADES -->
+            
+            <div id="actividades">
+                <fieldset>
+                    <legend> &#128692;&#127997; <strong>A</strong>ctividades &#129336;&#127997;</legend>
+                    <p>Por favor, indicá cuáles actividades te interesan.</p> 
+                    <label for="sedePalermo">Sede Palermo:</label> 
+                    <div class="sedes">
+                        <div><input type="checkbox" name="sedePalermo" id="basquet" value="basquet"><p>Básquet</p></div>
+                        <div><input type="checkbox" name="sedePalermo" id="boxeo" value="boxeo"><p>Boxeo</p></div>
+                        <div><input type="checkbox" name="sedePalermo" id="futbol" value="futbol"><p>Fútbol</p></div>
+                        <div><input type="checkbox" name="sedePalermo" id="tenis" value="tenis"><p>Tenis</p></div>
+                    </div>
+                    
+                    <label for="sedeRosario">Sede Rosario:</label>
+                    <div class="sedes">
+                        <div><input type="checkbox" name="sedeRosario" id="basquet" value="basquet"><p>Básquet</p></div>
+                        <div><input type="checkbox" name="sedeRosario" id="boxeo" value="boxeo"><p>Boxeo</p></div>
+                        <div><input type="checkbox" name="sedeRosario" id="rugby" value="rigby"><p>Rugby</p></div>
+                        <div><input type="checkbox" name="sedeRosario" id="voley" value="voleys"><p>Voley</p></div>
+                    </div>
+                </fieldset>
+            </div>
+            <!-- CONDICIONES Y NOVEDADES -->
+            <div id="condiciones">
+                <div class="acepto">
+                    <input type="checkbox" value="si"> <p> Acepto las condiciones*</p>
+                </div>
+                <div class="acepto">
+                    <input type="checkbox" value="si" checked> <p>Deseo recibir novedades </p>
+                </div> 
+                <div id="campo"><p>*: campo obligatorio.</p></div>
+            </div>
+            <!-- BUTTONS -->
+            <div id="botones">
+                <input type="submit" value="Iniciar Afiliación" >
+                <input type="reset" value="Restablecer">
+            </div>
+
+        </form>
+    </div>
+    <script src="./asset/script.js"></script>
+</body>
+</html>

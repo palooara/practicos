@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-size: 10px;
+    background-color: #1f2023;
+    font-family: roboto, sans-serif;
+    box-sizing: border-box;
+}
+strong{
+    font-size:20px;
+    font-weight: 600;
+}
+p{
+    font-size: medium;
+    margin-right: 3px;
+    margin-left: 1px;
+    font-family: poppins, sans-serif;
+}
+#formularioAfiliacion{
+    margin-right: 25%;
+    margin-left: 25%;
+
+}
+h1{
+    border-top: 16px #4d6d63 solid;
+    border-bottom: 16px #4d6d63 solid;
+    border-right: 18px #1f2023 solid;
+    border-left: 18px #1f2023 solid;
+    width: 47%;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    padding: 2px;
+    font-size: 4em;
+    color: white;
+    font-family: "poppins", sans-serif;
+    font-weight: 900;
+}
+fieldset{
+    text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #d6e2de;
+    border-color: #4d6d63;
+    
+}
+
+fieldset:focus-within{
+    background-color: #a6c1b9;
+}
+
+fieldset:focus-within legend{
+    background-color: #2b3d37;
+}
+
+fieldset legend{
+    text-align: left;
+    padding: 4px;
+    border-radius: 5px;
+    background-color: #4d6d63;
+    color: white;
+    font-size: medium;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+hr{
+    border:none;
+    border-top: 15px dotted #a6c1b9;
+    width: 45%;
+    ;
+}
+
+.sexo{
+    justify-content: center;
+}
+
+label{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: medium;
+}
+
+input{
+    font-size: medium;
+    border: solid 1px #4d6d63;
+    border-radius: 2px;
+    width: 40%;
+    padding: 5px;
+    align-items: stretch;
+    text-align: right;
+    color: #c0c0c0;
+}
+
+input:focus{
+    background-color: #4d6d63;
+    color: #c0c0c0;
+}
+input[type="checkbox"], input[type="radio"], input[type="submit"], input[type="reset"]{
+    width: auto;
+    font-size: medium;
+}
+#botones{
+    display: flex;
+    justify-content: center;
+    
+}
+#botones input{
+    background-color: #2b3d37;
+    color: #d6e2de;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 8px;
+    margin-top: 10px;
+    font-family: roboto, sans-serif;
+    border-radius: 5px;
+}
+#botones input:hover{
+    color: #2b3d37;
+    background-color: #d6e2de;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 8px;
+    margin-top: 10px;
+}
+#condiciones{
+    text-align: left;
+    margin-left: 1.5%;
+    color: white;
+}
+#condiciones input , #condiciones p{
+    margin-left: 0px;
+}
+.acepto{
+    display: flex;
+}
+select{
+    width: 41%;
+    border: solid 1px #4d6d63;
+    border-radius: 2px;
+    font-size: large;
+    padding: 5px;
+    font-family: poppins, sans-serif;
+    color: #a3a3a3;
+}
+
+textarea{
+    width: 40%;
+    border: solid 1px #4d6d63;
+    border-radius: 2px;
+    font-size: small;
+    height: 60px;
+}
+textarea:focus{
+    background-color: #4d6d63;
+}
+
+
+@media (max-width: 1200px){
+    #formularioAfiliacion{
+        margin-left: 15%;
+        margin-right: 15%;
+    }   
+    h1{
+
+        width: 65%;
+    }
+}
+@media (max-width: 992px){
+    #formularioAfiliacion{
+        margin-left: 10%;
+        margin-right: 10%;
+    }   
+    h1{
+
+        width: 75%;
+    }
+} 
+
+@media (max-width: 768px){
+    #formularioAfiliacion{
+        margin-left: 5%;
+        margin-right: 5%;
+    }   
+    h1{
+
+        width: 85%;
+    }
+}
+@media (max-width: 576px){
+    #formularioAfiliacion{
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+    }   
+    h1{
+
+        width: 95%;
+    }
+}
+
+img{
+    display: none;
+}
+
