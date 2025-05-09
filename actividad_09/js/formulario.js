@@ -1,9 +1,9 @@
-let contactos = [];
-function procesarForm (event){
+let contactos = JSON.parse(localStorage.getItem("contactos")) || [];
+function guardarContacto (event){
     event.preventDefault(); // Evitar el envío del formulario
     const nombre = document.getElementById("name").value;
     const email = document.getElementById("email").value;
-    const fechaNacimiento = document.getElementById("fechaNacimiento").vale;
+    const fechaNacimiento = document.getElementById("fechaNacimiento").value;
     const id = document.getElementById("id").value;
 
     let contacto = {

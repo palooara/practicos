@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<header>
+<a href="pages/contactos.html">contactos</a>
+</header>
 <body>
     <h1>Contactos</h1>
     <div>
-        <form action="">
+        <form id="formulario" onsubmit="guardarContacto(event)">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
             <br>
@@ -19,8 +22,8 @@
             <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
             <br>
             <label for="accion">Acciòn a realizar</label>
-            <select name="accion" id="accion">
-                <option value="" selected disabled>Seleccionar</option>
+            <select name="accion" id="accion" required>
+                <option selected disabled>Seleccionar</option>
                 <option value="crear">Crear</option>
                 <option value="modificar">Modificar</option>
                 <option value="eliminar">Eliminar</option>
